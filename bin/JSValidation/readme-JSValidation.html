@@ -1,0 +1,909 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<title>Documentation &laquo; Dented Reality</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<style type="text/css" media="print">
+<!--
+
+/**
+ *
+ * TAG DEFINITIONS
+ * ---------------
+ * Defining the attributes of generic tags
+ *
+ */
+
+BODY, FORM, H1, H2, H3, P, UL, LI, OL #allContent {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-family: Times New Roman, Times, serif;
+	font-size: 11pt;
+	font-weight: normal;
+	color: #000000;
+}
+
+H1, H2, H3, H4, H5, H6 {
+	font-family: Garamond, Times New Roman, Times, serif;
+	font-weight: bold;
+	text-align: left;
+	margin: 0;
+	padding:0;
+	padding-bottom: 0.1em;
+	background: transparent;
+}
+
+H1 {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	font-size: 25pt;
+	padding: 0;
+	border-bottom: solid 2px #000000;
+}
+
+H2 {
+	font-size: 20pt;
+	margin-left: 0;
+	margin-bottom: -0.2em;
+}
+
+H3 {
+	font-size: 15pt;
+}
+
+H4 {
+	font-size: 12pt;
+	text-decoration: underline;
+	font-weight: bold;
+    font-variant: small-caps;
+}
+
+P {
+	margin: 0.5em 0 1em 0;
+	background: transparent;
+}
+
+OL, UL, LI {
+	background: transparent;
+	margin-left: 1em;
+}
+
+UL {
+	list-style-type: square;
+	margin: 0.2em 0.2em 0.2em 1em;
+}
+
+A {
+	text-decoration: underline;
+	padding: 0 0.2em 0 0.2em;
+	font-weight: bold;
+}
+A:link {
+	color: #0000FF;
+}
+
+A:visited {
+	color: #696969;
+}
+
+A:hover {
+	background: #DDDDDD;
+}
+
+A:active {
+	color: #FF0000;
+}
+
+ACRONYM {
+	border-bottom: dashed 1px #808080;
+	cursor: help;
+}
+
+DT {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+PRE, .code {
+	margin: 1em 0.5em 1em 0.5em;
+	padding: 0.3em;
+	border: solid 1px #C0C0C0;
+	background: #EFEFEF;
+	font-family: Courier New, Courier, Fixedsys, monotype;
+	font-size: 11pt;
+	font-weight: normal;
+	text-align: left;
+}
+
+/**
+ *
+ * ID-BASED DEFINITIONS
+ * --------------------
+ * mostly for global positioning items
+ *
+ */
+
+#allContent {
+	display: block;
+	width: 100%;
+	margin: 0 1em 1em 1em;
+}
+
+#mastHead {
+	display: none;
+}
+
+#contentContainer {
+	position: absolute;
+	display: block;
+	left: 1em;
+	width: 100%;
+}
+
+#mainContent {
+	text-align: justify;
+	line-height: 130%;
+	font-size: 13pt;
+	border-bottom: solid 2px #000000;
+}
+
+#localNavigationContainer {
+	display: none;
+}
+
+#globalNavigation {
+	display: none;
+}
+
+#searchBox {
+	display: none;
+}
+
+#footer {
+	display: none;
+}
+
+/**
+ *
+ * CLASS DEFINITIONS
+ * -----------------
+ * Defining classes for presentation which is used multiple times
+ * on different elements.
+ *
+ */
+
+.hide {
+	display: none;
+}
+
+.transparentImg {
+	background: #FFFFFF;
+	padding: 0;
+	margin: 0;
+}
+
+.smaller {
+	font-size: 10pt;
+}
+
+.larger {
+	font-size: 14pt;
+}
+
+.blogPermaLink {
+	display: none;
+}
+
+.blosxomDate {
+	font-size: 9pt;
+}
+
+HR.listSpacer {
+	height: 1px;
+	width: 80%;
+	text-align: center;
+	margin-bottom: 1em;
+	border-bottom: solid 1px #808080;
+}
+
+.noPrint {
+	display: none;
+}
+
+DIV.breadcrumbs {
+	margin: 0;
+	margin-bottom: 1em;
+	padding: 0.1em;
+	font-size: 70%;
+	color: #000000;
+	font-weibght: normal;
+	text-decoration: none;
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+}
+
+IMG.feature {
+	padding: 0.5em;
+	margin: 0.5em;
+	border: solid 1px #000000;
+	background: #FFFFFF;
+}
+
+DIV.feature, P.feature {
+	padding: 0.5em;
+	margin: 0.5em;
+	border: solid 1px #000000;
+	background: #FFFFFF;
+	font-family: Garamond, Times New Roman, Times, serif;
+	font-weight: bold;
+	font-size: 110%;
+}
+
+-->
+</style>
+<style type="text/css" media="screen">
+<!--
+
+/**
+ *
+ * TAG DEFINITIONS
+ * ---------------
+ * Defining the attributes of generic tags
+ *
+ */
+
+BODY, FORM, H1, H2, H3, P, UL, LI, OL, #allContent {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	font-weight: normal;
+	color: #000000;
+}
+
+H1, H2, H3, H4, H5, H6 {
+	font-family: Garamond, Times New Roman, Times, serif;
+	font-weight: bold;
+	padding-bottom: 0.1em;
+	background: transparent;
+}
+
+H1 {
+	font-size: 175%;
+	padding-bottom: 0.5em;
+}
+
+H2 {
+	font-size: 125%;
+}
+
+H3 {
+	font-size: 100%;
+}
+
+P {
+	margin: 0.5em 0 1em 0;
+	background: transparent;
+}
+
+OL, UL, LI {
+	background: transparent;
+	margin-left: 1em;
+	list-style: outside;
+	text-align: left;
+}
+
+UL {
+	list-style-type: square;
+	margin: 0.2em 0.2em 0.2em 1em;
+}
+
+A {
+	text-decoration: underline;
+	font-weight: inherit;
+}
+A:link {
+	color: #0000FF;
+}
+
+A:visited {
+	color: #444444;
+}
+
+A:hover {
+	background: #DDDDDD;
+}
+
+A:active {
+	color: #FF0000;
+}
+
+ACRONYM, .acronym, .define {
+	border-bottom: dashed 1px #444444;
+	cursor: help;
+}
+
+DT {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+PRE, .code {
+	margin: 1em 1em 1em 1em;
+	padding: 0.3em;
+	border: solid 1px #444444;
+	background: #EEEEEE;
+	font-family: Courier New, Courier, Fixedsys, monotype;
+	font-size: 95%;
+	font-weight: normal;
+}
+
+TD {
+	border-top: solid 1px #444444;
+	padding: 0.2em;
+	margin: 0;
+}
+
+TEXTAREA {
+	width: 100%;
+	height: 5em;
+	font-family: Verdana, Tahoma, Arial;
+}
+
+LABEL {
+	cursor: pointer;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+/**
+ *
+ * ID-BASED DEFINITIONS
+ * --------------------
+ * mostly for global positioning items
+ *
+ */
+
+#allContent {
+	display: block;
+	width: 100%;
+	margin: 0 1em 1em 1em;
+}
+
+html>body #allContent {
+    width: auto;
+    left: 1em;
+    right: 1em;
+}
+
+#mastHead {
+	position: absolute;
+	display: block;
+	width: 60%;
+	height: 4em;
+	text-align: left;
+	border: none;
+}
+
+#contentContainer {
+	position: absolute;
+	display: block;
+	top: 7em;
+	left: 1em;
+	width: 100%;
+}
+
+html>body #contentContainer {
+    width: auto;
+    right: 1em;
+}
+
+#mainContent {
+	width: 68.5%;
+	border: solid 1px #444444;
+	padding: 0.8em;
+	margin-bottom: 0.5em;
+	text-align: justify;
+	line-height: 130%;
+}
+
+html>body #mainContent {
+    width: 65.5%;
+}
+
+#localNavigationContainer {
+	position: absolute;
+	display: block;
+	top: 7em;
+	left: 69%;
+	right: 0.5em;
+}
+
+html>body #localNavigationContainer {
+    width: auto;
+    left: 69%;
+    right: 1em;
+}
+
+#localNavigation {
+	display: block;
+	border: solid 1px #444444;
+	padding: 0.5em;
+	background: #EEEEEE;
+	text-align: justify;
+	width: 100%;
+}
+
+html>body #localNavigation {
+    width: auto;
+    left: 1em;
+    right: 1em;
+}
+
+#localNavigation UL {
+    font-size: 80%;
+}
+
+#calendar {
+	display: none;
+	margin-bottom: 0.5em;
+	border: solid 1px #444444;
+	padding: 0.5em;
+	background: #EEEEEE;
+	text-align: justify;
+	width: 100%;
+}
+
+html>body #calendar {
+    width: auto;
+    left: 1em;
+    right: 1em;
+}
+
+#globalNavigation {
+	position: absolute;
+	display: block;
+	top: 4.5em;
+	width: 100%;
+	background: #000000;
+	border: solid 1px #000000;
+	color: #FFFFFF;
+	font-weight: bold;
+	vertical-align: baseline;
+	text-align: left;
+}
+
+html>body #globalNavigation {
+    width: auto;
+    left: 1em;
+    right: 1em;
+}
+
+#searchBox {
+	position: absolute;
+	display: block;
+	top: 0.8em;
+	right: 1.3em;
+	width: 40%;
+	text-align: right;
+	font-size: 80%;
+	border: none;
+}
+
+#searchBox P {
+    padding: 0.2em;
+    margin: 0;
+    border: 0;
+}  
+
+#footer {
+	position: relative;
+	display: block;
+	padding: 0.5em;
+	border-top: solid 2px #000000;
+	font-size: 80%;
+	font-weight: normal;
+	text-align: center;
+}
+
+#copyright {
+	display: inline;
+}
+
+/**
+ *
+ * CLASS DEFINITIONS
+ * -----------------
+ * Defining classes for presentation which is used multiple times
+ * on different elements.
+ *
+ */
+
+.hide {
+	display: none;
+}
+
+.activeGlobal {
+	line-height: 200%;
+	color: #C6C6C6;
+	text-decoration: none;
+	background: #727272;
+	color: #FFFFFF;
+}
+
+A.globalLink, A.globalLink:visited {
+	padding: 1em;
+	line-height: 180%;
+	color: #C6C6C6;
+	text-decoration: none;
+}
+
+A.globalLink:hover {
+	background: #727272;
+	color: #FFFFFF;
+}
+
+INPUT.text {
+	font-family: Verdana, Tahoma, Arial;
+}
+
+INPUT.errorField, TEXTAREA.errorField, SELECT.errorField {
+    font-family: Verdana, Tahoma, Arial;
+    background: #FACDCA;
+}
+
+.transparentImg {
+	background: #FFFFFF;
+	padding: 0;
+	margin: 0;
+}
+
+.smaller {
+	font-size: 80%;
+}
+
+TD.smaller {
+	width: 15em;
+}
+
+.larger {
+	font-size: 120%;
+}
+
+.indent {
+	padding-left: 2em;
+}
+
+IMG.feature {
+	padding: 0.5em;
+	margin: 0.5em;
+	border: solid 1px #444444;
+	background: #FFFFFF;
+}
+
+DIV.feature, P.feature {
+	padding: 0.5em;
+	margin: 0.5em;
+	border: solid 1px #444444;
+	background: #EEEEEE;
+}
+
+.asterisk {
+	font-weight: bold;
+	color: #FF0000;
+}
+
+HR.listSpacer {
+	height: 1px;
+	width: 80%;
+	text-align: center;
+	margin-bottom: 1em;
+	border-bottom: solid 1px #444444;
+}
+
+.noPrint {
+	display: inline;
+}
+
+DIV.breadcrumbs {
+	margin: 0;
+	margin-bottom: 1em;
+	padding: 0.1em;
+	background: #EBEBEB;
+	font-size: 70%;
+	color: #444444;
+	border: solid 1px #C0C0C0;
+}
+
+.noBorders {
+	border: none;
+}
+
+.errorMsg {
+    border: solid 1px #8F180F;
+    background: #FACDCA;
+    padding: 0.5em;
+    font-weight: bold;
+}
+
+.searchResultDescription {
+    font-size: 80%;
+}
+
+LI.searchResult {
+    margin-bottom: 0.8em;
+}
+
+.mastHeadText {
+	font-family: Arial Black, Arial, Verdana, sans-serif;
+	font-size: 2.5em;
+	font-weight: bold;
+	color: #ADADAD;
+	top: -0.2em;
+	position: absolute;
+}
+
+.warning {
+	padding: 0.8em;
+	margin: 0.5em;
+	border: solid 1px #FF6600;
+	background: #FBD195;
+	font-weight: bold;
+	font-size: 90%;
+}
+
+-->
+</style>
+</head>
+
+<body><div id="allContent">
+
+  <div id="mastHead">
+    <p class="mastHeadText">DentedReality</p>
+  </div>
+
+  <div id="contentContainer"> 
+    <div id="mainContent"> 
+      <h1>JavaScript Validation Library</h1>
+      <div class="warning"><h2><a name="warning" id="warning"></a>Warning</h2>
+        <p>You should NEVER rely on client-side validation of data entered in a 
+          web-based form. Since the validation takes place on the client's side, 
+          it is really out of your control, and thus is not reliable (they could 
+          bypass/modify the requirements without your knowledge). On top of that 
+          - this library only works with Internet Explorer, so users with a different 
+          browser will not have their information validated at all!</p>
+      </div>
+      <h2><a name="usage" id="usage"></a>Usage</h2>
+      <p>Using this validation library is quite easy, it's simply a matter of 
+        including some custom attributes on your form fields (which will be ignored 
+        if you stop using the<br />
+        library or if it can't be found).</p>
+      <h2><a name="config" id="config"></a>Configuring The Library</h2>
+      <p>There isn't anything that you <em>have</em> to set up to use the library, 
+        however you can open &quot;validate.js&quot; and edit the following lines 
+        if you like;</p>
+      <p class="code"> defaultValidationRule = &quot;free&quot;;<br />
+        defaultErrorPrefix = &quot;The following problem(s) occurred when processing 
+        your submission;<br />
+        defaultErrorMessage = &quot;The value in the '[ELEMENT]' field is invalid.&quot;;</p>
+      <p>These determine the default operations of the library, as well as the 
+        prefix to the error message that will be displayed when something doesn't 
+        validate correctly.</p>
+      <p>In defaultErrorMessage, you can insert [ELEMENT] whereever you want the 
+        name of the field that failed to validate to be displayed.</p>
+      <h2><a name="importing" id="importing"></a>Importing the Library Into a 
+        Page</h2>
+      <p>It is very easy to include the validation scripts in a page, the best 
+        way is to include code similar to this;</p>
+      <p class="code"> &lt;script language=&quot;JavaScript1.2&quot; src=&quot;validation.js&quot;&gt;<br />
+        &lt;!--<br />
+        // --&gt;<br />
+        &lt;/script&gt;</p>
+      <p>Which will import the script file and run the functions as if they were 
+        in the current file.</p>
+      <p>This process can be automated in dynamic websites by either including 
+        that code in a header template for the site, or by creating a simple function 
+        such as that below, which works in PHP</p>
+      <p class="code"> // Dumps in the code to &quot;import&quot; the javascript 
+        validation source file function include_validation($path=&quot;&quot;) 
+        {<br />
+        echo &quot;&lt;script language=\&quot;JavaScript1.2\&quot; src=\&quot;&quot; 
+        . $path . &quot;validation.js\&quot;&gt;\n&quot;;<br />
+        echo &quot;&lt;!--\n&quot;;<br />
+        echo &quot;// --&gt;\n&quot;;<br />
+        echo &quot;&lt;/script&gt;\n&quot;;<br />
+        }</p>
+      <p>The other option is to actually copy and paste the entire file into a 
+        page and put it between script tags. This is not recommended because it 
+        makes it harder to include on multiple pages and if you modify the rules 
+        then you need to update each and every file that includes the validation 
+        library.</p>
+      <h2> <a name="setup" id="setup"></a>Setting Up a Form for Validation</h2>
+      <p>Before you can validate any field in a form, you need to add the following 
+        to the &lt;form&gt; tag that the fields reside in;</p>
+      <p class="code"> onSubmit=&quot;return validateForm('[name of the form]')&quot;;<br />
+        OR<br />
+        onSubmit=&quot;return validateForm(this.name)&quot;;</p>
+      <p>So you might end up with something like this;</p>
+      <p class="code"> &lt;form name=&quot;accounts&quot; action=&quot;POST&quot; 
+        action=&quot;process.php&quot; onSubmit=&quot;return validateForm('accounts');&quot;&gt;</p>
+      <p>This tells the form that when it gets submitted, it needs to run the 
+        &quot;validateForm&quot; function before actually submitting data. That 
+        is the function that will check for the directives that tell it to validate 
+        certain fields.</p>
+      <p>NOTE: You can also add the code to the submit button of your form, but 
+        it is less reliable. To do this, make your submit button something like;</p>
+      <p class="code"> &lt;input type=&quot;submit&quot; name=&quot;submit&quot; 
+        value=&quot;Submit Query&quot; onClick=&quot;return validateForm('formname');&quot;&gt;<br />
+      </p>
+      <h2><a name="validating" id="validating"></a>Validating a Field</h2>
+      <p>On a text input (or &lt;textarea&gt;) for example, you might normally 
+        have something like</p>
+      <p class="code"> &lt;input type=&quot;text&quot; name=&quot;name&quot; value=&quot;&quot; 
+        size=&quot;40&quot;&gt;</p>
+      <p>On a page which is using the validation library, you could validate that 
+        element to ensure that it only contains text and spaces (a-z, A-Z and 
+        &quot; &quot;) by using the following;</p>
+      <p class="code"> &lt;input type=&quot;text&quot; name=&quot;name&quot; value=&quot;&quot; 
+        size=&quot;40&quot; validate=&quot;true&quot; rule=&quot;txt&quot;&gt;</p>
+      <p>And if you wanted to make it have a special error message, then you could 
+        also include the following in that input tag;</p>
+      <p class="code"> error=&quot;You have invalid characters in the Name you 
+        entered&quot;</p>
+      <p>In these special tag attributes, this is what happens;</p>
+      <ol>
+        <li><strong>validate=&quot;true&quot; </strong><br />
+          Tells the validation library to check this field for validity.</li>
+        <li><strong> [optional] rule=&quot;txt&quot;</strong><br />
+          Defines which validation rule to use to check the field. If this isn't 
+          specified and validate=&quot;true&quot; is, then defaultValidationRule 
+          will be used to validate the field. (see below)</li>
+        <li><strong> [optional] error=&quot;You have invalid characters in the 
+          Name you entered&quot;<br />
+          </strong>Defines a custom error message to display if this field fails 
+          to validate against the rule specified. If no error message is defined, 
+          then defaultErrorMessage will be used.</li>
+        <li><strong> [optional] required=&quot;true&quot; </strong><br />
+          Tells the validation script to make sure there is *something* in this 
+          field, since the base rules allow blank submissions. This will require 
+          that *something* be entered, and then the rule is checkd as well.</li>
+      </ol>
+      <p>You can apply the same principles to a &lt;select&gt; tag, but be careful 
+        to remember that the rule applies to the value part of the select, not 
+        the text label that the user sees. The &quot;notnull&quot; rule is the 
+        best one to use on &lt;select&gt; tags, and have something like below;</p>
+      <p class="code">&lt;select name=&quot;state&quot; validate=&quot;true&quot; 
+        rule=&quot;notnull&quot; error=&quot;Please select your state&quot;&gt;<br />
+        &lt;option value=&quot;&quot;&gt;Select State&lt;/option&gt;<br />
+        &lt;option value=&quot;ACT&quot;&gt;Australian Capital Territory&lt;/option&gt;<br />
+        &lt;option value=&quot;NSW&quot;&gt;New South Wales&lt;/option&gt;<br />
+        &lt;option value=&quot;NT&quot;&gt;Northern Territory&lt;/option&gt;<br />
+        &lt;option value=&quot;SA&quot;&gt;South Australia&lt;/option&gt;<br />
+        &lt;option value=&quot;TAS&quot;&gt;Tasmania&lt;/option&gt;<br />
+        &lt;option value=&quot;VIC&quot;&gt;Victoria&lt;/option&gt;<br />
+        &lt;option value=&quot;WA&quot;&gt;Western Australia&lt;/option&gt;<br />
+        &lt;/select&gt;</p>
+      <p>this would make an error appear if the user didn't select a state from 
+        the select box, or if they left it highlighting the &quot;Select State&quot; 
+        option.</p>
+      <h2> <a name="rules" id="rules"></a>Possible Validation Rules</h2>
+      <p>The following values are valid for the rule=&quot;&quot; portion of a 
+        special input tag;</p>
+      <p class="code"> &quot;txt&quot; = Text Only (and spaces)<br />
+        &quot;num&quot; = Numbers Only (allow decimal)<br />
+        &quot;int&quot; = Integers only<br />
+        &quot;phone&quot; = Phone number, (0-9()-+)<br />
+        &quot;date&quot; = Date Format (dd/mm/yyyy)<br />
+        &quot;email&quot; = Email addresses<br />
+        &quot;alnum&quot; = Alpha-Numeric Values<br />
+        &quot;curr&quot; = Currency ($xxxx...&quot;.&quot;xx)<br />
+        &quot;addr&quot; = Address characters (a-zA-Z0-9-,#)<br />
+        &quot;name&quot; = Most likely characters in a name (a-zA-Z,.-)<br />
+        &quot;free&quot; = Freeform text (a-zA-Z0-9+-_()[]/&amp;)<br />
+        &quot;nobadsql&quot; = Denies harmful SQL syntax (delete|drop|update|replace|kill|lock)<br />
+        &quot;notnull&quot; = Must enter something<br />
+        RegExp = Any valid regular expression you may specify within the tag<br />
+        ie. &quot;/^\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3}$/&quot; = an IP number</p>
+      <p>You can also define new rules in the &quot;validation.js&quot; file under 
+        the &quot;validateField&quot; function. To do this, you need to define 
+        the name of the rule under the &quot;switch&quot; statement, and then 
+        define the regular expression that would validate to &quot;true&quot; 
+        when matched against a valid representation of that string format. This 
+        is not reccommended unless you have a firm grasp of JavaScript programming 
+        techniques.</p>
+      <h2><a name="versions" id="versions"></a>Version Changes</h2>
+      <p><em>2002-01-25</em> 
+      <p><strong>v1.2 public </strong> 
+      <ul>
+        <li>Updated documentation inline and in README.txt</li>
+        <li>Added the following base rules 
+          <ul>
+            <li>&quot;int&quot;</li>
+            <li> &quot;addr&quot;</li>
+            <li> &quot;name&quot;</li>
+            <li> &quot;nobadsql&quot;</li>
+          </ul>
+        </li>
+        <li>Improved/modified these rules 
+          <ul>
+            <li>&quot;num&quot;</li>
+            <li> &quot;email&quot;</li>
+            <li> &quot;date&quot;</li>
+          </ul>
+        </li>
+        <li> Added support for the &quot;required&quot; attribute on validated 
+          tags</p> </li>
+      </ul>
+      <p><em>2001-12-15</em></p>
+      <p> <strong>v1.1 public</strong></p>
+      <ul>
+        <li>Updated documentation and compiled into archive with JS library file</li>
+      </ul>
+      <p><em>2001-09-26</em></p>
+      <p><strong> v1.1</strong></p>
+      <ul>
+        <li>Added custom validation rules (define regex once off)</li>
+        <li>Ability to check select fields as well.</p> </li>
+      </ul>
+      <p><em>2001-09-18</em></p>
+      <p> <strong>v1.0 (Original Release)</strong></p>
+      <ul>
+        <li>Text input validation using the rules
+          <ul>
+            <li>&quot;txt&quot; = Text Only (and spaces)</li>
+            <li> &quot;num&quot; = Numbers Only</li>
+            <li> &quot;date&quot; = Date Format (dd/mm/yyyy)</li>
+            <li> &quot;email&quot; = Email addresses</li>
+            <li> &quot;alnum&quot; = Alpha-Numeric Values</li>
+            <li> &quot;curr&quot; = Currency ($xxxx...&quot;.&quot;xx) ($ not 
+              req'd)</li>
+            <li> &quot;free&quot; = Freeform text (a-zA-Z0-9+-_()[]/&amp;)</li>
+            <li> &quot;phone&quot; = Phone number, (0-9()-+)</li>
+            <li> &quot;notnull&quot; = Requires that something is entered</p> 
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h2><a name="about" id="about"></a>About Dented Reality</h2>
+      <p>Dented Reality actually specialises in Usability, Information Architecture 
+        and database development, but produces a number of PHP and JavaScript-based 
+        projects 'on-the-side'. If you enjoy or are benefitting from this project, 
+        you can make a <a href="http://www.dentedreality.com.au/payments/?for=jsvalidation">donation</a> 
+        on the Dented Reality website, although it is not required. If you like 
+        this project, please <a href="http://www.dentedreality.com.au/contact/form/?subject=JSValidation">let 
+        me know</a> that I am doing something right!</p>
+    </div>
+	
+    <div id="footer"> 
+      <div id="copyright"> 
+        <p>This is a Dented Reality Production, <a href="http://www.dentedreality.com.au/copyright/">&copy; 
+          2003</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div id="localNavigationContainer"> 
+    <div id="localNavigation"> 
+      <h2>JS Validation</h2>
+      <ul>
+        <li><a href="#warning">Warning</a></li>
+        <li><a href="#usage">Usage</a></li>
+        <li><a href="#config">Configuring The Library</a></li>
+        <li><a href="#importing">Importing the Library Into a Page</a></li>
+        <li><a href="#setup">Setting Up a Form for Validation</a></li>
+        <li><a href="#validating">Validating a Field</a></li>
+        <li><a href="#rules">Possible Validation Rules</a></li>
+        <li><a href="#versions">Version Changes</a></li>
+        <li><a href="#about">About Dented Reality</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="globalNavigation"><a href="http://www.dentedreality.com.au/" class="globalLink">Visit 
+    DentedReality.com.au</a></div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<style  type="text/css">
+body, td {
+
+FONT-FAMILY: tahoma;
+	FONT-SIZE: 11px;
+	COLOR: #535353;
+	
+}
+</style >
+<table border="0" cellpadding="0" cellspacing="10" width="99%" dir="rtl">
+<!-- page title -->
+<tbody><tr>
+	<td>
+	<table style="border-bottom: 1px dotted  #00CC00" border="0" cellpadding="0" cellspacing="0" width="100%">
+		<tbody><tr>
+			<td><span class="page-title2">System Message</span></td>
+
+		</tr>
+	</tbody></table>
+	</td>
+</tr>
+<!-- page title -->
+
+<tr>
+	<td>
+	
+
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td colspan="2" bgcolor="#009900" height="1"></td></tr><tr bgcolor="#F4FDF7" valign="middle"><td align="center" width="10%"><img src="{_ICON}" border="0"></td><td width="90%"><table border="0" cellspacing="10" width="100%"><tbody><tr><td>
+	<span class="scc">
+	<strong>{_TITLE}</strong>
+	<br>{_MSG}
+	</span>
+
+
+</td></tr></tbody></table></td></tr><tr><td colspan="2" bgcolor="#009900" height="1"></td></tr></tbody></table>
+	
+	</td>
+</tr>
+
+
+
+</tbody></table>

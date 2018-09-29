@@ -1,0 +1,135 @@
+
+@import url("fontadmin.css");
+@charset "utf-8";
+/* CSS Document */
+
+a {text-decoration:none}
+
+
+.menu{
+/*	background:#efe4a0;*/
+	background:#F4ECBD;
+	border:#CCCCCC 1px solid;
+	 
+	font:Tahoma; 
+	font-weight:bold;
+  
+}
+
+.dor {
+/*font-family : Tahoma, Arial, Helvetica, sans-serif;*/
+font-family:Droid Arabic Kufi;
+font-size: 11px;
+color: #000;
+/*background: #fff;*/
+margin: 0px;
+text-shadow: 1px 1px 1px #e3e3e3;
+font-weight: normal;
+
+}
+
+.dor a{
+/*font-family : Tahoma, Arial, Helvetica, sans-serif;*/
+font-family:Droid Arabic Kufi;
+font-size: 11px;
+color: #000;
+/*background: #fff;*/
+margin: 0px;
+text-shadow: 1px 1px 1px #e3e3e3;
+font-weight: normal;
+
+}
+
+
+
+.inputs {
+border:1px #777  inset;
+background-color:#FFFF99;
+height:25px;
+width:200px;
+color: #000;
+direction:rtl;
+/*background: #fff;*/
+margin: 0px;
+text-shadow: 1px 1px 1px #e3e3e3;
+font-weight: normal;
+}
+
+
+.inputtime {
+border:1px #777  inset;
+background-color:#ffffff;
+height:24px;
+width:100px;
+color: #000;
+direction:rtl;
+vertical-align:middle;
+text-align:center;
+
+margin: 0px;
+ text-shadow: 1px 1px 1px #999999;
+font-weight: normal;
+}
+
+ .question_red {font-family:Tahoma bold; font-size:14px; color:#FF0000; font-weight:bold; text-decoration:none}
+
+.selects {
+border:1px #777  inset;
+background-color:#FFFF99;
+ 
+ 
+color: #000;
+ 
+/*background: #fff;*/
+margin: 0px;
+text-shadow: 1px 1px 1px #e3e3e3;
+font-weight: normal;
+}
+
+ .button {
+ font-family : Tahoma, Arial, Helvetica, sans-serif;
+ border:1px  #777  solid;
+ width:120px;
+ height:24px;
+ 
+ text-shadow: 1px 1px 1px #999999;
+ 
+font-weight:bold;
+ color: #000;
+ }
+
+
+ .buttonnext {
+ font-family : Tahoma, Arial, Helvetica, sans-serif;
+ font-size:10px;
+ border:1px  #777  solid;
+ width:120px;
+ height:24px;
+ text-shadow: 1px 1px 1px #999999;
+font-weight:bold;
+ color: #000;
+ }
+ 
+ 
+  .buttonend {
+ font-family : Tahoma, Arial, Helvetica, sans-serif;
+ font-size:10px;
+ border:1px  #777  solid;
+ width:120px;
+ height:24px;
+ text-shadow: 1px 1px 1px #999999;
+font-weight:bold;
+ color:#CC3300;
+ }
+ 
+ #info_1 {
+MARGIN: 10px; 
+BACKGROUND: #f3deab;
+
+}
+.myselect { 
+FONT-SIZE: 11px; FONT-WEIGHT: bold; COLOR: #000000; FONT-FAMILY:Tahoma; text-decoration: none;
+text-shadow:#CC6600
+
+
+}

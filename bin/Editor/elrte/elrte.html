@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>elRTE</title>
+
+	<!-- jQuery and jQuery UI -->
+<script src="js/jquery-1.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery-ui-1.8.5.custom.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/elrte.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/i18n/elrte.ar.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" href="js/ui-themes/smoothness/jquery-ui-1.8.5.custom.css" type="text/css" media="screen" charset="utf-8">
+<link rel="stylesheet" href="css/elrte.full.css" type="text/css" media="screen" charset="utf-8">
+<script type="text/javascript" charset="utf-8">
+		$().ready(function() {
+			var opts = {
+				cssClass : 'el-rte',
+				 lang     : 'ar',
+
+				height   : 250,
+				toolbar  : 'maxi',
+				cssfiles : ['css/elrte-inner.css']
+			}
+		   	$('#editor').elrte(opts);
+       })
+</script>
+
+
+
+</head>
+<body> <form method="post" action="post.php">
+	<div id="editor">
+
+	</div>
+<center><input type="submit" name="" value="submit" id=""> </center>
+    </form>
+</body>
+</html>

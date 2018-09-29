@@ -1,0 +1,90 @@
+
+
+
+#pass-strength-result {
+float: right;
+margin: 12px 1px 5px 5px;
+}
+
+#pass-strength-result {
+border-style: solid;
+border-width: 1px;
+float: left;
+margin: 12px 5px 5px 1px;
+padding: 3px 5px;
+text-align: center;
+width: 200px;
+}
+#pass-strength-result.strong{background-color:#c3ff88;border-color:#8dff1c!important;}
+/* password strength meter */
+#pass-strength-result {
+background-color: #eee;
+border-color: #ddd !important;
+}
+
+#pass-strength-result.bad {
+background-color: #ffb78c;
+border-color: #ff853c !important;
+}
+
+#pass-strength-result.good {
+background-color: #ffec8b;
+border-color: #fc0 !important;
+}
+
+#pass-strength-result.short {
+background-color: #ffa0a0;
+border-color: #f04040 !important;
+}
+
+#pass-strength-result.strong {
+background-color: #c3ff88;
+border-color: #8dff1c !important;
+}
+
+.form-table {
+border-collapse: collapse;
+margin-top: .5em;
+width: 100%;
+margin-bottom: -8px;
+clear: both; }
+
+.form-table td {
+margin-bottom: 9px;
+padding: 8px 10px;
+line-height: 20px;
+font-size: 11px; }
+
+.form-table th,.form-wrap label {
+font-weight: normal;
+text-shadow: rgba(255,255,255,1) 0 1px 0; }
+
+.form-table th {
+vertical-align: top;
+text-align: left;
+padding: 10px;
+width: 200px; }
+
+.form-table th.th-full { width: auto; }
+
+.form-table div.color-option {
+display: block;
+clear: both;
+margin-top: 12px; }
+
+.form-table input.tog {
+margin-top: 2px;
+margin-right: 2px;
+float: left; }
+
+.form-table table.color-palette {
+vertical-align: bottom;
+float: left;
+margin: -12px 3px 11px; }
+
+.form-table .color-palette td {
+border-width: 1px 1px 0;
+border-style: solid solid none;
+height: 10px;
+line-height: 20px;
+width: 10px; }
